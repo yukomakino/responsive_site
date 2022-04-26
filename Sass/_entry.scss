@@ -1,0 +1,35 @@
+#entry{
+    height:482px;
+    width: 100%;
+    position: relative;
+}
+
+.entry-wrap {
+    width: 320px;
+    height: 127px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform:translate(-50%,-50%);
+    text-align: center;
+
+    @include sp {
+        width: 90%
+    }
+}
+
+.entry-btn {
+    @extend .fv-btn;
+    width: 100%;
+}
+
+.entry-copy {
+    font-weight: bold;
+    font-size: 1.8rem;
+    color: #191919;
+}
+
